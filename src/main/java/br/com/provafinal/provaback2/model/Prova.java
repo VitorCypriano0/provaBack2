@@ -17,10 +17,10 @@ public class Prova {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Titulo e obrigatorio")
+    @NotBlank(message = "Título é obrigatório")
     private String titulo;
 
-    @NotBlank(message = "Materia e obrigatoria")
+    @NotBlank(message = "Matéria é obrigatória")
     private String materia;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
